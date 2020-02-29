@@ -1,0 +1,23 @@
+.content {
+  padding: 0;
+}
+.content ul {
+  margin: 0;
+  list-style: none;
+}
+.content li {
+  float: left;
+}
+.content li:first-child a {
+  border-left: 1px solid #ddd;
+}
+.content a {
+  display: block;
+  padding: 5px 10px;
+  border-right: 1px solid #ddd;
+}
+.content a:hover {
+  background: #eee;
+}
+
+/*# sourceMappingURL=top-bar.component.css.map */
