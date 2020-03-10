@@ -1,0 +1,65 @@
+superSoftwareDev{
+	"skills":[
+		{
+			"name":"java",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		},
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		},
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		}
+	],
+	"soft skills":[
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		},
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		}
+	],
+	"qualifications": [
+		{
+
+		}
+	],	
+	"work": [
+		{
+			
+		}
+	],
+	"values":[
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		},
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		}
+	],
+	"extras":[
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		},
+		{
+			"name":"namevalue",
+			"name1":"namevalue1",
+			"name2":"namevalue2",
+		}
+	],
+}
