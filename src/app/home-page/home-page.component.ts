@@ -8,5 +8,4 @@ import {Component} from '@angular/core';
 
 export class HomePageComponent {
   title = 'Portfolio - Bruno Marques';
-  age = new Date().getFullYear() - 1997;
 }

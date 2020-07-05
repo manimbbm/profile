@@ -1,0 +1,54 @@
+<app-top-bar></app-top-bar>
+<section>
+  <div class="content">
+    <div class="row">
+      <div class="col-md-4 col-sm-3">
+        <div>
+          <img src="images/cientista-da-computacao-bbm.jpg" alt="Cientista da Computação - Bruno Marques" title="Cientista da Computação - Bruno Marques" class="img-fluid full_width">
+        </div>
+        <div class="side_menu">
+          <ul>
+            <li>
+              <a routerLink="/home" [ngClass]="{'current': router.url === '/home'}">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/qualifications" [ngClass]="{'current': router.url === '/qualifications'}">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Qualifications</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/skills" [ngClass]="{'current': router.url === '/skills'}">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/power-ups" [ngClass]="{'current': router.url === '/power-ups'}">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                <span>Power Ups</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/super-powers" [ngClass]="{'current': router.url === '/super-powers'}">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                <span>Super Powers</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <h3>Graduando em Ciência da Computação</h3>
+  <p><i class="fa fa-university" aria-hidden="true"></i> Universidade Federal do ABC</p>
+  <p>Bruno Barbosa Marques - {{ age }}</p>
+</footer>
