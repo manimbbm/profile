@@ -9,31 +9,31 @@
         <div class="side_menu">
           <ul>
             <li>
-              <a routerLink="/home" [ngClass]="{'current': router.url === '/home'}">
+              <a routerLink="/home" routerLinkActive="current" [routerLinkActiveOptions]="{exact:true}">
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <span>Home</span>
               </a>
             </li>
             <li>
-              <a routerLink="/qualifications" [ngClass]="{'current': router.url === '/qualifications'}">
+              <a routerLink="/qualifications" routerLinkActive="current" [routerLinkActiveOptions]="{exact:true}">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <span>Qualifications</span>
               </a>
             </li>
             <li>
-              <a routerLink="/skills" [ngClass]="{'current': router.url === '/skills'}">
+              <a routerLink="/skills" routerLinkActive="current" [routerLinkActiveOptions]="{exact:true}">
                 <i class="fa fa-book" aria-hidden="true"></i>
                 <span>Skills</span>
               </a>
             </li>
             <li>
-              <a routerLink="/power-ups" [ngClass]="{'current': router.url === '/power-ups'}">
+              <a routerLink="/power-ups" routerLinkActive="current" [routerLinkActiveOptions]="{exact:true}">
                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                 <span>Power Ups</span>
               </a>
             </li>
             <li>
-              <a routerLink="/super-powers" [ngClass]="{'current': router.url === '/super-powers'}">
+              <a routerLink="/super-powers" routerLinkActive="current" [routerLinkActiveOptions]="{exact:true}">
                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                 <span>Super Powers</span>
               </a>
