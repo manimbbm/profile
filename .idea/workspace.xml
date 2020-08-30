@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06bea57a-4f3c-4fe2-a326-469e09694751" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/power-ups/power-ups.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/power-ups/power-ups.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/super-powers/super-powers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/super-powers/super-powers.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +22,9 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,14 +75,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../../campaigns/cmp-outcome-surveys" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../campaigns/cmp-outcome-surveys-send" value="PREVIEW" />
-      </map>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -88,7 +93,14 @@
       <workItem from="1593497695901" duration="184000" />
       <workItem from="1593940424009" duration="2688000" />
       <workItem from="1594022540187" duration="68000" />
-      <workItem from="1594543980599" duration="871000" />
+      <workItem from="1594543980599" duration="1062000" />
+      <workItem from="1594622013496" duration="25000" />
+      <workItem from="1596956654756" duration="602000" />
+      <workItem from="1598078603278" duration="1127000" />
+      <workItem from="1598252789414" duration="137000" />
+      <workItem from="1598681343651" duration="4086000" />
+      <workItem from="1598764020129" duration="2238000" />
+      <workItem from="1598772629631" duration="1438000" />
     </task>
     <servers />
   </component>
@@ -108,13 +120,23 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593941705977">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="677" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598682574217">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="508" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-127.-1027.1680.1027/0.23.1440.877@0.23.1440.877" timestamp="1593941705977" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1594551942177">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="677" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1057/1067.1103.1440.877/1920.53.1680.1027@0.23.1920.1057" timestamp="1598682574217" />
+    <state x="667" y="306" width="586" height="490" key="find.popup" timestamp="1598772592051">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="667" y="306" width="586" height="490" key="find.popup/0.23.1920.1057/1067.1103.1440.877/1920.53.1680.1027@0.23.1920.1057" timestamp="1598772592051" />
+    <state x="625" y="256" key="run.anything.popup" timestamp="1598682985705">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="625" y="256" key="run.anything.popup/0.23.1920.1057/1067.1103.1440.877/1920.53.1680.1027@0.23.1920.1057" timestamp="1598682985705" />
+    <state x="513" y="252" width="894" height="815" key="search.everywhere.popup" timestamp="1598682624985">
+      <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/-127.-1027.1680.1027/0.23.1440.877@0.23.1440.877" timestamp="1594551942177" />
+    <state x="513" y="252" width="894" height="815" key="search.everywhere.popup/0.23.1920.1057/1067.1103.1440.877/1920.53.1680.1027@0.23.1920.1057" timestamp="1598682624985" />
   </component>
 </project>

@@ -4,6 +4,9 @@
     <div class="row">
       <div class="col-md-4 col-sm-3">
         <div>
+          <input type="text" [formControl]="imageUrl"/>
+          <img [src]="imageUrl.value" *ngIf="imageUrl.valid" alt="Cientista da Computação - Bruno Marques"
+               title="Cientista da Computação - Bruno Marques" class="img-fluid full_width">
           <img src="images/cientista-da-computacao-bbm.jpg" alt="Cientista da Computação - Bruno Marques" title="Cientista da Computação - Bruno Marques" class="img-fluid full_width">
         </div>
         <div class="side_menu">
@@ -48,7 +51,7 @@
   </div>
 </section>
 <footer>
-  <h3>Graduando em Ciência da Computação</h3>
+  <h3>Cientista da Computação</h3>
   <p><i class="fa fa-university" aria-hidden="true"></i> Universidade Federal do ABC</p>
   <p>Bruno Barbosa Marques - {{ age }}</p>
 </footer>
