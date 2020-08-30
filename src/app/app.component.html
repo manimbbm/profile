@@ -4,7 +4,9 @@
     <div class="row">
       <div class="col-md-4 col-sm-3">
         <div>
-          <input type="text" [formControl]="imageUrl"/>
+          <label>
+            <input type="text" [formControl]="imageUrl"/>
+          </label>
           <img [src]="imageUrl.value" *ngIf="imageUrl.valid" alt="Cientista da Computação - Bruno Marques"
                title="Cientista da Computação - Bruno Marques" class="img-fluid full_width">
           <img src="images/cientista-da-computacao-bbm.jpg" alt="Cientista da Computação - Bruno Marques" title="Cientista da Computação - Bruno Marques" class="img-fluid full_width">

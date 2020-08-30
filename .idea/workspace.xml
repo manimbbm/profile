@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06bea57a-4f3c-4fe2-a326-469e09694751" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home-page/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/power-ups/power-ups.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/power-ups/power-ups.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/super-powers/super-powers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/super-powers/super-powers.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/top-bar/top-bar.component.scss" afterDir="false" />
-    </list>
+    <list default="true" id="06bea57a-4f3c-4fe2-a326-469e09694751" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +87,7 @@
       <workItem from="1598252789414" duration="137000" />
       <workItem from="1598681343651" duration="4086000" />
       <workItem from="1598764020129" duration="2238000" />
-      <workItem from="1598772629631" duration="1438000" />
+      <workItem from="1598772629631" duration="1909000" />
     </task>
     <servers />
   </component>
