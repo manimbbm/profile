@@ -4,15 +4,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-page-not-found',
   template: `
-      <div class="p-5">
-        <p class="text-center title">Error 404: Couldn't find any "{{ curUrl }}" page :(</p>
-      </div>
-  `,
-  styles: []
+    <div class="p-5">
+      <h2 class="title text-center">Error 404</h2>
+      <p class="text-center">Could not find the requested page 😢</p>
+      <p class="text-center"><b>/{{ currUrl }}</b></p>
+    </div>
+  `
 })
 export class PageNotFoundComponent {
 
   constructor(private router: Router) {}
 
-  curUrl = this.router.url.substr(1);
+  currUrl = this.router.url.substr(1);
 }

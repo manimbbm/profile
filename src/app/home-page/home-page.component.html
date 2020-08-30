@@ -2,12 +2,9 @@
 <h2 class="subtitle">Bruno Barbosa Marques</h2>
 <p><i class="fa fa-university" aria-hidden="true"></i> Universidade Federal do ABC</p>
 <hr>
-<div class="container">
-  <h3>Sobre</h3>
-  <p>Me divirto com áreas inusitadas, coisas criativas, desafios de raciocínio lógico, jogos, com os mares da imaginação. Procuro dar o meu melhor em tudo que faço, buscando surpreender, inovar e ser único em qualquer seção da vida.</p>
-</div>
-<hr>
-<div class="container">
-  <h3>About</h3>
-  <p>I usually spend my free time with exotic things, creative ones, logical reasoning challenges, games, and with the seas of imagination. I try to give my best on everything I do, trying to surprise people, innovate, and be unique in any life's section.</p>
+
+<div class="container" *ngFor="let content of data">
+  <h3>{{content.title}}</h3>
+  <p>{{content.summary}}</p>
+  <hr>
 </div>
