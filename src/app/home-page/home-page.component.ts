@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {AppComponent} from '../app.component';
 
 @Component ({
     selector: 'app-home-page',
@@ -17,6 +16,6 @@ export class HomePageComponent {
     {
       title: 'About',
       summary: 'I usually spend my free time with exotic things, creative ones, logical reasoning challenges, games, and with the seas of imagination. I try to give my best on everything I do, trying to surprise people, innovate, and be unique in any life\'s section.'
-    },
+    }
   ]
 }
