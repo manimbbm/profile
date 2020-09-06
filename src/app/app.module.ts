@@ -12,8 +12,7 @@ import {QualificationsComponent} from './qualifications/qualifications.component
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {SuperPowersComponent} from './super-powers/super-powers.component';
 import {AccountComponent} from './account/account.component';
-import {PowerUpsComponent} from './power-ups/power-ups.component';
-import {SkillsComponent} from './skills/skills.component';
+import {CareerComponent} from './career/career.component';
 import {SideNavComponent} from './shared/side-nav/side-nav.component'
 
 @NgModule({
@@ -22,8 +21,7 @@ import {SideNavComponent} from './shared/side-nav/side-nav.component'
     HomePageComponent,
     TopBarComponent,
     QualificationsComponent,
-    SkillsComponent,
-    PowerUpsComponent,
+    CareerComponent,
     AccountComponent,
     SuperPowersComponent,
     PageNotFoundComponent,
