@@ -14,6 +14,7 @@ import {SuperPowersComponent} from './super-powers/super-powers.component';
 import {AccountComponent} from './account/account.component';
 import {CareerComponent} from './career/career.component';
 import {SideNavComponent} from './shared/side-nav/side-nav.component'
+import {MainMilestoneComponent} from './career/main-milestone.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {SideNavComponent} from './shared/side-nav/side-nav.component'
     AccountComponent,
     SuperPowersComponent,
     PageNotFoundComponent,
-    SideNavComponent
+    SideNavComponent,
+    MainMilestoneComponent
   ],
   imports: [
     BrowserModule,
