@@ -15,6 +15,7 @@ import {AccountComponent} from './account/account.component';
 import {CareerComponent} from './career/career.component';
 import {SideNavComponent} from './shared/side-nav/side-nav.component'
 import {MainMilestoneComponent} from './career/main-milestone.component';
+import { CustomDatePipe } from './shared/custom.datepipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {MainMilestoneComponent} from './career/main-milestone.component';
     SuperPowersComponent,
     PageNotFoundComponent,
     SideNavComponent,
-    MainMilestoneComponent
+    MainMilestoneComponent,
+    CustomDatePipe
   ],
   imports: [
     BrowserModule,

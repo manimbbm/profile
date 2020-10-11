@@ -1,41 +1,9 @@
 import {Component} from '@angular/core';
 import {faCalendarAlt, faLocationArrow} from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'main-milestone',
-  template: `
-    <div>
-      <p></p>
-      <p>Backlog owner of their main project, being responsible for requirement analysis and for leading an Indian development team to
-        overcome any technical limitations</p> during a Scrum development life cycle.
-      <p>Implemented core code features</p>
-      <p>Shared learnings cross department</p>
-      <p>Collected and Discussed customer feedback</p>
-      <p>Contributed for mobile responsiveness</p>
-      <p>Improved Image Editor</p>
-      <p>Engaged on a new project to expand the company's customer base, focusing on core product value exposed through an intuitive UI for
-        more casual users.</p>
-      <p>Net Promoter Score improvements</p>
-      <p>As a team player collaborated on product decisions</p>
-      <p>Code review</p>
-      <p>Department planning</p>
-      <div class="d-flex milestone rounded p-3">
-        <div class="image-container text-center col-3">
-          <div class="align-self-center">
-            <!--todo align content center-->
-            <div class="image d-flex m-auto"><img src="../assets/images/link-pixel-art.gif" class="h-75 m-auto align-content-center" alt=""></div>
-            <!--<p class="figure-caption">Simple metal shield<br> + Simple metal sword</p>-->
-          </div>
-
-        </div>
-        <div class="col-9 float-right align-middle">
-          <div class="title"><h3 class="mat-card-header">SOFTWARE ENGINEER - Poppulo (E-Search DAC)</h3></div>
-          <div class="date"><p><fa-icon [icon]="faCalendarAlt"></fa-icon> Jul/2019 - Present - <fa-icon [icon]="faLocationArrow"></fa-icon> Cork, Ireland</p></div>
-          <div class="description"></div>
-        </div>
-      </div>
-
-    </div>
-  `,
+  templateUrl: './main-milestone.component.html',
   styles: [`
     .milestone {
         background: #eee;
@@ -43,15 +11,55 @@ import {faCalendarAlt, faLocationArrow} from '@fortawesome/free-solid-svg-icons'
     }
 
     .image{
-      border:5px solid #555;
-      width: 50px;
-      height: 50px;
+      border:7px solid #555;
+      width: 70px;
+      height: 70px;
       border-radius: 100%;
     }
   `]
 })
 
-export class MainMilestoneComponent {
+export class MainMilestoneComponent{
   faCalendarAlt = faCalendarAlt;
   faLocationArrow = faLocationArrow;
+  today = this.todayReadable();
+  milestones = [
+    {
+      imageUrl: '../assets/images/link-pixel-art--level-master.gif',
+      role: 'SOFTWARE ENGINEER',
+      company: 'Poppulo (E-Search DAC)',
+      startDate: new Date(2019, 6),
+      endDate: this.today,
+      location: 'Cork, Ireland'
+    },
+    {
+      imageUrl: '../assets/images/link-pixel-art--level-3.gif',
+      role: 'IT PROJECT MANAGEMENT',
+      company: 'Janssen Pharma of Johnson & Johnson',
+      startDate: new Date(2018, 1),
+      endDate: new Date(2019, 1),
+      location: 'São Paulo, Brasil'
+    },
+    {
+      imageUrl: '../assets/images/link-pixel-art--level-2.gif',
+      role: 'FULL-STACK DEVELOPER TEAM LEAD',
+      company: 'Publinet 1 Digital Marketing',
+      startDate: new Date(2017, 0),
+      endDate: new Date(2018, 0),
+      location: 'Guarulhos, SP, Brasil'
+    },
+    {
+      imageUrl: '../assets/images/link-pixel-art--level-1.gif',
+      role: 'FRONT-END DEVELOPER',
+      company: 'Publiwork Digital Marketing',
+      startDate: new Date(2014, 1),
+      endDate: new Date(2016, 11),
+      location: 'São Paulo, Brasil'
+    }
+  ];
+
+  todayReadable(){
+    let today = new Date();
+    return `${today.getFullYear} ${today.getMonth} ${today.getDate}`;
+  }
 }
