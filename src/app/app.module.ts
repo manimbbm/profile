@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ReactiveFormsModule} from '@angular/forms';
-
 import {HomePageComponent} from './home-page/home-page.component';
 import {TopBarComponent} from './shared/top-bar/top-bar.component';
 import {QualificationsComponent} from './qualifications/qualifications.component';

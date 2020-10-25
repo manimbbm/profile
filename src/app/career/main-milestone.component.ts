@@ -1,5 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {faCalendarAlt, faLocationArrow} from '@fortawesome/free-solid-svg-icons';
+import carousel from 'bootstrap';
 
 @Component({
   selector: 'main-milestone',
@@ -19,7 +20,7 @@ import {faCalendarAlt, faLocationArrow} from '@fortawesome/free-solid-svg-icons'
   `]
 })
 
-export class MainMilestoneComponent{
+export class MainMilestoneComponent implements OnInit{
   faCalendarAlt = faCalendarAlt;
   faLocationArrow = faLocationArrow;
   today = this.todayReadable();
@@ -58,8 +59,23 @@ export class MainMilestoneComponent{
     }
   ];
 
+  ngOnInit() {
+    this.initCarousel();
+  }
+
   todayReadable(){
     let today = new Date();
     return `${today.getFullYear} ${today.getMonth} ${today.getDate}`;
+  }
+
+  getHistoricalMilestonesOrder() {
+    return this.milestones.sort((a, b) => +a.startDate - +b.startDate );
+  }
+
+  initCarousel(){
+    $('.carousel').carousel({
+      wrap: false,
+      interval: 4500
+    });
   }
 }
