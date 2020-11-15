@@ -1,49 +1,18 @@
-<div id="carouselExampleIndicators" class="carousel slide">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" *ngFor="let milestone of getHistoricalMilestonesOrder(); last as isLast; index as i" [attr.data-slide-to]="i" [ngClass]="{'active': isLast}"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div *ngFor="let milestone of milestones; last as isLast" class="carousel-item"  [ngClass]="{'active': isLast}">
-        <div class="d-flex milestone rounded p-3">
-          <div class="image-container text-center col-3">
-            <div class="align-self-center">
-              <div class="image d-flex m-auto"><img src="{{milestone.imageUrl}}" class="h-75 m-auto align-content-center" alt=""></div>
-              <!--<p class="figure-caption">Simple metal shield<br> + Simple metal sword</p>-->
-            </div>
-          </div>
-          <div class="col-9 float-right align-middle">
-            <div class="mb-3">
-                <h2 class="mat-card-header mb-0" style="font-size:1.5rem;">{{milestone.role}}</h2>
-                <span style="font-size:1.2rem;" (click)="initCarousel();">{{milestone.company}}</span>
-            </div>
-            <p>
-                <fa-icon [icon]="faCalendarAlt"></fa-icon> {{milestone.startDate | customDate }} ~
-                <span *ngIf="milestone.endDate === today; else elseBlock">Present</span>
-                <ng-template #elseBlock>{{milestone.endDate | customDate}}</ng-template>
-                <span class="ml-4"><fa-icon [icon]="faLocationArrow"></fa-icon> {{milestone.location}}</span>
-            </p>
-            <div class="description"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-<!-- <div>
-    <div *ngFor="let milestone of milestones" class="d-flex milestone rounded p-3">
+<!--todo approach from scratch-->
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+<!--todo ngbootstrap approach-->
+<ngb-carousel #carousel>
+  <ng-template ngbSlide *ngFor="let milestone of milestones">
+    <div class="d-flex milestone rounded p-3">
       <div class="image-container text-center col-3">
         <div class="align-self-center">
           <div class="image d-flex m-auto"><img src="{{milestone.imageUrl}}" class="h-75 m-auto align-content-center" alt=""></div>
+          <!--<p class="figure-caption">Simple metal shield<br> + Simple metal sword</p>-->
         </div>
       </div>
-      <div class="col-9 float-right align-middle">
+      <div class="carousel-caption col-9 float-right align-middle">
         <div class="mb-3">
             <h2 class="mat-card-header mb-0" style="font-size:1.5rem;">{{milestone.role}}</h2>
             <span style="font-size:1.2rem;">{{milestone.company}}</span>
@@ -54,7 +23,54 @@
             <ng-template #elseBlock>{{milestone.endDate | customDate}}</ng-template>
             <span class="ml-4"><fa-icon [icon]="faLocationArrow"></fa-icon> {{milestone.location}}</span>
         </p>
-        <div class="description"></div>
+        <div class="description">
+        </div>
       </div>
     </div>
-</div> -->
+  </ng-template>
+</ngb-carousel>
+<div class="m2">
+  <button (click)="pauseCarousel()">pause carousel</button>
+  <button (click)="cycleCarousel()">cycle carousel</button>
+</div>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+<!--todo bootstrap + jquery approach-->
+<!--<div id="carouselExampleIndicators" class="carousel slide">-->
+<!--    <ol class="carousel-indicators">-->
+<!--      <li data-target="#carouselExampleIndicators" *ngFor="let milestone of getHistoricalMilestonesOrder(); last as isLast; index as i" [attr.data-slide-to]="i" [ngClass]="{'active': isLast}"></li>-->
+<!--    </ol>-->
+<!--    <div class="carousel-inner">-->
+<!--      <div *ngFor="let milestone of milestones; last as isLast" class="carousel-item"  [ngClass]="{'active': isLast}">-->
+<!--        <div class="d-flex milestone rounded p-3">-->
+<!--          <div class="image-container text-center col-3">-->
+<!--            <div class="align-self-center">-->
+<!--              <div class="image d-flex m-auto"><img src="{{milestone.imageUrl}}" class="h-75 m-auto align-content-center" alt=""></div>-->
+<!--              &lt;!&ndash;<p class="figure-caption">Simple metal shield<br> + Simple metal sword</p>&ndash;&gt;-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-9 float-right align-middle">-->
+<!--            <div class="mb-3">-->
+<!--                <h2 class="mat-card-header mb-0" style="font-size:1.5rem;">{{milestone.role}}</h2>-->
+<!--                <span style="font-size:1.2rem;">{{milestone.company}}</span>-->
+<!--            </div>-->
+<!--            <p>-->
+<!--                <fa-icon [icon]="faCalendarAlt"></fa-icon> {{milestone.startDate | customDate }} ~-->
+<!--                <span *ngIf="milestone.endDate === today; else elseBlock">Present</span>-->
+<!--                <ng-template #elseBlock>{{milestone.endDate | customDate}}</ng-template>-->
+<!--                <span class="ml-4"><fa-icon [icon]="faLocationArrow"></fa-icon> {{milestone.location}}</span>-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">-->
+<!--      <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--      <span class="sr-only">Previous</span>-->
+<!--    </a>-->
+<!--    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">-->
+<!--      <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--      <span class="sr-only">Next</span>-->
+<!--    </a>-->
+<!--</div>-->
