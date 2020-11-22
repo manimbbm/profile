@@ -10,14 +10,14 @@ export class AppComponent implements OnInit{
   age: number;
 
   ngOnInit() {
-    this.age = AppComponent.calcAge();
+    this.age = this.calcAge();
   }
 
-  private static calcAge() {
+  calcAge() {
     let today = new Date();
     let age = today.getFullYear() - 1997;
     if (today.getDate() >= 11 && today.getMonth() >= 11) {
-      return age++;
+      return age + 1;
     }
     return age;
   }

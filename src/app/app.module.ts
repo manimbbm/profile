@@ -16,6 +16,7 @@ import {SideNavComponent} from './shared/side-nav/side-nav.component'
 import {MainMilestoneComponent} from './career/main-milestone.component';
 import { CustomDatePipe } from './shared/custom.datepipe';
 import {NgbCarouselConfig, NgbCarouselModule, NgbConfig} from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {NgbCarouselConfig, NgbCarouselModule, NgbConfig} from '@ng-bootstrap/ng-
     PageNotFoundComponent,
     SideNavComponent,
     MainMilestoneComponent,
-    CustomDatePipe
+    CustomDatePipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
