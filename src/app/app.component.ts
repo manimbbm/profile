@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'manimbbm';
   age: number;
-
+  
   ngOnInit() {
     this.age = this.calcAge();
   }
@@ -16,7 +16,8 @@ export class AppComponent implements OnInit{
   calcAge() {
     let today = new Date();
     let age = today.getFullYear() - 1997;
-    if (today.getDate() >= 11 && today.getMonth() >= 11) {
+    
+    if (today >= new Date(today.getFullYear(), 10, 11)) {
       return age + 1;
     }
     return age;
