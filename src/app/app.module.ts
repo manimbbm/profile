@@ -13,7 +13,7 @@ import {SuperPowersComponent} from './super-powers/super-powers.component';
 import {AccountComponent} from './account/account.component';
 import {CareerComponent} from './career/career.component';
 import {SideNavComponent} from './shared/side-nav/side-nav.component'
-import {MainMilestoneComponent} from './career/main-milestone.component';
+import {MainMilestoneComponent} from './career/main-milestones.component';
 import { CustomDatePipe } from './shared/custom.datepipe';
 import {NgbCarouselConfig, NgbCarouselModule, NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './shared/footer/footer.component';

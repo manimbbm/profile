@@ -1,3 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 // @import "~bootstrap";
 //@import "~@fortawesome";
+.carousel-control-next-icon {
+    background-image: url(/assets/images/next.svg) !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(/assets/images/previous.svg) !important;
+}
+
+.carousel-indicators li{
+    background-color: black !important;
+}
