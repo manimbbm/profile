@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'manimbbm';
+  title = 'Software Engineer - Bruno Marques';
   age: number;
-  
+
   ngOnInit() {
     this.age = this.calcAge();
   }
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   calcAge() {
     let today = new Date();
     let age = today.getFullYear() - 1997;
-    
+
     if (today >= new Date(today.getFullYear(), 10, 11)) {
       return age + 1;
     }
